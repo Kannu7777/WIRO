@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | WIRO.IN | Bhai Papers Private Limited</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="products-page">
+
+    <header class="navbar">
+        <a href="/" class="logo">WIRO<span>.IN</span></a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/#about">About Us</a>
+            <a href="/products">Products</a>
+            <a href="#custom-solutions">Custom Solutions</a>
+            <a href="/contact">Contact Us</a>
+        </nav>
+        <a href="/contact" class="nav-button">Get in Touch</a>
+    </header>
+
+    <main>
+        <section class="products-hero">
+            <div class="products-hero-content">
+                <p class="section-label">BHAI PAPERS PRIVATE LIMITED</p>
+                <h1>Products</h1>
+                <p>Solutions designed for performance, presentation and reliability.</p>
+            </div>
+        </section>
+
+        <section class="catalogue section" aria-labelledby="standard-products-title">
+            <div class="catalogue-heading">
+                <h2 id="standard-products-title">Dependable solutions for<br><span>every application.</span></h2>
+            </div>
+
+            <div class="catalogue-list">
+                <article class="catalogue-card" id="wiro">
+                    <div class="catalogue-image">
+                        <span>01</span>
+                        <img src="{{ url_for('static', filename='css/images/wiro.png') }}" alt="WIRO binding products">
+                    </div>
+                    <div class="catalogue-content">
+                        <h3 class="card-title">WIRO / Double Wire</h3>
+                        <p class="card-description">Used for professionally binding calendars, diaries, notebooks, manuals, brochures, catalogues and reports. Durable, easy to use, aesthetically pleasing and quick to bind — available in different colours and sizes for a neat, linear, professional finish. Documents up to 38mm thick can be bound.</p>
+
+                        <details class="spec-table-toggle">
+                            <summary class="spec-table-button">View Product Sizes</summary>
+                            <div class="spec-table-wrap">
+                                <table class="spec-table">
+                                    <tbody>
+                                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </details>
+
+                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                    </div>
+                </article>
+
+                <article class="catalogue-card" id="nylon-coated-wires">
+                    <div class="catalogue-image">
+                        <span>02</span>
+                        <img src="{{ url_for('static', filename='css/images/Binding.png') }}" alt="Nylon coated steel wire spools">
+                    </div>
+                    <div class="catalogue-content">
+                        <h3 class="card-title">Nylon Coated Wires</h3>
+                        <p class="card-description">Have coloured polymer coating over steel wire, considered the best product for book binding. Available in a wide spectrum of colours with a smooth, blemish-free surface even after prolonged usage.</p>
+                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                    </div>
+                </article>
+
+                <article class="catalogue-card" id="paper">
+                    <div class="catalogue-image">
+                        <span>03</span>
+                        <img src="{{ url_for('static', filename='css/images/papers.png') }}" alt="Premium papers and boards">
+                    </div>
+                    <div class="catalogue-content">
+                        <h3 class="card-title">Paper for Every Application</h3>
+                        <p class="card-description">Papers &amp; boards for calendars, catalogues, diaries, school stationery, brochures, medicine packaging and food packaging. Imported from Asian and European countries, additionally we also represent a few reputed paper mills of North India.</p>
+                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                    </div>
+                </article>
+
+                <article class="catalogue-card" id="kappa-boards">
+                    <div class="catalogue-image">
+                        <span>04</span>
+                        <img src="{{ url_for('static', filename='css/images/packaging.png') }}" alt="Kappa boards">
+                    </div>
+                    <div class="catalogue-content">
+                        <h3 class="card-title">Kappa Boards/ Grey Boards</h3>
+                        <p class="card-description">Used for gift boxes, mobile phone boxes, high-end perfume packaging, clothing, puzzles, cakes, shoes, sweets and other articles. Custom made in different thicknesses and sizes at our manufacturing facility in the National Capital Region of Delhi.</p>
+                        <ul class="card-list">
+                            <li>Both Side Grey Board</li>
+                            <li>One Side White / One Side Grey Board</li>
+                            <li>One Side Black / One Side Grey Board</li>
+                        </ul>
+                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="products-custom section" id="custom-solutions" aria-labelledby="custom-solutions-title">
+            <div class="catalogue-heading">
+                <div class="section-label">CUSTOM SOLUTIONS</div>
+                <h2 id="custom-solutions-title">Built around<br><span>your requirements.</span></h2>
+            </div>
+
+            <div class="products-custom-grid">
+                <article class="products-custom-card" id="luxury-gift-boxes">
+                    <div class="products-custom-image">
+                        <span>01</span>
+                        <img src="{{ url_for('static', filename='css/images/lux boxes.png') }}" alt="Luxury and fancy gift boxes">
+                    </div>
+                    <div class="products-custom-content">
+                        <span class="catalogue-kicker">CUSTOM PACKAGING</span>
+                        <h3 class="card-title">Luxury &amp; Fancy Gift Boxes</h3>
+                        <p class="card-description">Premium custom-made gift and packaging boxes designed to give products a refined, distinctive presentation. We create boxes tailored to specific product requirements, with attention to structure, finish and overall aesthetics. Suitable for gifting, premium products, corporate requirements and other specialized packaging applications.</p>
+                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                    </div>
+                </article>
+
+                <article class="products-custom-card" id="eco-friendly-stationery">
+                    <div class="products-custom-image">
+                        <span>02</span>
+                        <img src="{{ url_for('static', filename='css/images/eco stat.png') }}" alt="Eco-friendly stationery">
+                    </div>
+                    <div class="products-custom-content">
+                        <span class="catalogue-kicker">SUSTAINABLE STATIONERY</span>
+                        <div class="title-with-logo">
+                            <h3 class="card-title">Eco-Friendly Stationery</h3>
+
+                            <img
+                                src="{{ url_for('static', filename='css/images/citron.png') }}"
+                                alt="CITRON"
+                                class="citron-logo"
+                            >
+                        </div>
+                        <p class="card-description">We have recently launched CITRON, our in-house brand focused entirely on creating fine, aesthetic stationery using eco-friendly and sustainable raw materials. We also create customized eco-friendly stationery tailored to specific corporate brands.</p>
+                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">WIRO<span>.IN</span></div>
+        <p>Bhai Papers Private Limited</p>
+        <p>New Delhi, India</p>
+        <div class="footer-bottom">© 2026 Bhai Papers Private Limited. All rights reserved.</div>
+    </footer>
+
+    <div class="site-credit">Made By Armaan Bhargava<br>Email: armaanbhargava99@gmail.com</div>
+
+</body>
+</html>
