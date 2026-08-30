@@ -424,6 +424,14 @@ section {
     gap: 25px;
 }
 
+.product-grid .product-card:last-child {
+    grid-column: 1 / -1;
+
+    max-width: calc(50% - 12.5px);
+
+    margin: 0 auto;
+}
+
 .product-card {
     position: relative;
 
@@ -440,21 +448,6 @@ section {
     transform: translateY(-6px);
 
     border-color: #625e50;
-}
-
-.product-number {
-    position: absolute;
-
-    top: 25px;
-    left: 25px;
-
-    z-index: 2;
-
-    font-size: 13px;
-
-    letter-spacing: 2px;
-
-    color: #999;
 }
 
 .product-image {
@@ -881,6 +874,10 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    .product-grid .product-card:last-child {
+        max-width: 100%;
+    }
+
     .solutions-grid {
         grid-template-columns: 1fr;
     }
@@ -1190,7 +1187,7 @@ body.products-page .footer-bottom {
 }
 
 .spec-table-wrap {
-    max-width: 480px;
+    max-width: 700px;
     margin-top: 18px;
     overflow-x: auto;
 }
@@ -1202,10 +1199,30 @@ body.products-page .footer-bottom {
     border: 1px solid #282828;
 }
 
-.spec-table td {
+.spec-table td,
+.spec-table th {
     border: 1px solid #282828;
     height: 44px;
     min-width: 44px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #d0d0d0;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.spec-table thead th {
+    background: #1c1c1c;
+    color: #f4f3ef;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.spec-table tbody td:last-child {
+    white-space: normal;
+    min-width: 220px;
 }
 
 .card-contact-block {

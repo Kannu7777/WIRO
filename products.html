@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products | WIRO.IN | Bhai Papers Private Limited</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body class="products-page">
 
     <header class="navbar">
-        <a href="/" class="logo">WIRO<span>.IN</span></a>
+        <a href="index.html" class="logo">WIRO<span>.IN</span></a>
         <nav>
-            <a href="/">Home</a>
-            <a href="/#about">About Us</a>
-            <a href="/products">Products</a>
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About Us</a>
+            <a href="products.html">Products</a>
             <a href="#custom-solutions">Custom Solutions</a>
-            <a href="/contact">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
-        <a href="/contact" class="nav-button">Get in Touch</a>
+        <a href="contact.html" class="nav-button">Get in Touch</a>
     </header>
 
     <main>
@@ -40,7 +40,7 @@
                 <article class="catalogue-card" id="wiro">
                     <div class="catalogue-image">
                         <span>01</span>
-                        <img src="{{ url_for('static', filename='css/images/wiro.png') }}" alt="WIRO binding products">
+                        <img src="static/css/images/wiro.png" alt="WIRO binding products">
                     </div>
                     <div class="catalogue-content">
                         <h3 class="card-title">WIRO / Double Wire</h3>
@@ -50,49 +50,64 @@
                             <summary class="spec-table-button">View Product Sizes</summary>
                             <div class="spec-table-wrap">
                                 <table class="spec-table">
+                                    <thead>
+                                        <tr>
+                                            <th>SL.</th>
+                                            <th>Size in MM</th>
+                                            <th>Size in Inches</th>
+                                            <th>Loops</th>
+                                            <th>Applications</th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
-                                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
-                                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
-                                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
-                                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
-                                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                                        <tr><td>1</td><td>6.4</td><td>1/4"</td><td>92000</td><td>Wall Calendars, Pocket Pads</td></tr>
+                                        <tr><td>2</td><td>7.9</td><td>5/16"</td><td>67500</td><td>Wall Calendars, Pocket Pads, Small Presentations</td></tr>
+                                        <tr><td>3</td><td>9.5</td><td>3/8"</td><td>45000</td><td>Table Calendars, Notebooks, Pers</td></tr>
+                                        <tr><td>4</td><td>11.1</td><td>7/16"</td><td>35000</td><td>School Projects, Table Calendars, Operation Manuals</td></tr>
+                                        <tr><td>5</td><td>12.7</td><td>1/2"</td><td>27000</td><td>Table Calendars, Training Modules, Receipe Books</td></tr>
+                                        <tr><td>6</td><td>14.3</td><td>9/16"</td><td>22000</td><td>Manuals, Reports, Accounts Books, Sketch Books</td></tr>
+                                        <tr><td>7</td><td>15.9</td><td>5/8"</td><td>12000</td><td>Architecture Portfolio, Thick Student Workbooks</td></tr>
+                                        <tr><td>8</td><td>19.0</td><td>3/4"</td><td>9000</td><td>4 Subject Notebooks, Diaries, Multi Month Planners</td></tr>
+                                        <tr><td>9</td><td>22.2</td><td>7/8"</td><td>6800</td><td>4 Subject Notebooks, Diaries, Multi Month Planners</td></tr>
+                                        <tr><td>10</td><td>25.4</td><td>1"</td><td>5000</td><td>Heavy Reference Volumes, Large Catalogs, Diaries</td></tr>
+                                        <tr><td>11</td><td>31.8</td><td>1.25"</td><td>2300</td><td>Articles with more than 300 - 350 Pages</td></tr>
                                     </tbody>
                                 </table>
                             </div>
                         </details>
 
-                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                        <a href="contact.html" class="card-contact">CONTACT US →</a>
                     </div>
                 </article>
 
                 <article class="catalogue-card" id="nylon-coated-wires">
                     <div class="catalogue-image">
                         <span>02</span>
-                        <img src="{{ url_for('static', filename='css/images/Binding.png') }}" alt="Nylon coated steel wire spools">
+                        <img src="static/css/images/Binding.png" alt="Nylon coated steel wire spools">
                     </div>
                     <div class="catalogue-content">
                         <h3 class="card-title">Nylon Coated Wires</h3>
                         <p class="card-description">Have coloured polymer coating over steel wire, considered the best product for book binding. Available in a wide spectrum of colours with a smooth, blemish-free surface even after prolonged usage.</p>
-                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                        <a href="contact.html" class="card-contact">CONTACT US →</a>
                     </div>
                 </article>
 
                 <article class="catalogue-card" id="paper">
                     <div class="catalogue-image">
                         <span>03</span>
-                        <img src="{{ url_for('static', filename='css/images/papers.png') }}" alt="Premium papers and boards">
+                        <img src="static/css/images/papers.png" alt="Premium papers and boards">
                     </div>
                     <div class="catalogue-content">
                         <h3 class="card-title">Paper for Every Application</h3>
                         <p class="card-description">Papers &amp; boards for calendars, catalogues, diaries, school stationery, brochures, medicine packaging and food packaging. Imported from Asian and European countries, additionally we also represent a few reputed paper mills of North India.</p>
-                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                        <a href="contact.html" class="card-contact">CONTACT US →</a>
                     </div>
                 </article>
 
                 <article class="catalogue-card" id="kappa-boards">
                     <div class="catalogue-image">
                         <span>04</span>
-                        <img src="{{ url_for('static', filename='css/images/packaging.png') }}" alt="Kappa boards">
+                        <img src="static/css/images/packaging.png" alt="Kappa boards">
                     </div>
                     <div class="catalogue-content">
                         <h3 class="card-title">Kappa Boards/ Grey Boards</h3>
@@ -102,7 +117,27 @@
                             <li>One Side White / One Side Grey Board</li>
                             <li>One Side Black / One Side Grey Board</li>
                         </ul>
-                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                        <a href="contact.html" class="card-contact">CONTACT US →</a>
+                    </div>
+                </article>
+
+                <article class="catalogue-card" id="corner-tape">
+                    <div class="catalogue-image">
+                        <span>05</span>
+                        <img src="static/css/images/cornertape.png" alt="Corner tape for rigid boxes">
+                    </div>
+                    <div class="catalogue-content">
+                        <h3 class="card-title">Corner Tape for Rigid Boxes</h3>
+                        <p class="card-description">Corner tape for rigid boxes is a specialized heat-activated adhesive tape used to seal the edges of rigid board boxes. Made with clear plastic film, it offers high tensile strength and is tear and moisture resistant. It offers excellent corner reinforcement with a clean finish and minimal visibility outside the box.</p>
+                        <p class="card-description"><strong>Applications include:</strong></p>
+                        <ul class="card-list">
+                            <li>Luxury Gift Boxes</li>
+                            <li>Electronics and Mobile Phone Boxes</li>
+                            <li>Apparel and Footwear Boxes</li>
+                            <li>Cosmetic and Perfume Packaging</li>
+                            <li>Confectionery and Liquor Boxes</li>
+                        </ul>
+                        <a href="contact.html" class="card-contact">CONTACT US →</a>
                     </div>
                 </article>
 
@@ -119,20 +154,20 @@
                 <article class="products-custom-card" id="luxury-gift-boxes">
                     <div class="products-custom-image">
                         <span>01</span>
-                        <img src="{{ url_for('static', filename='css/images/lux boxes.png') }}" alt="Luxury and fancy gift boxes">
+                        <img src="static/css/images/lux boxes.png" alt="Luxury and fancy gift boxes">
                     </div>
                     <div class="products-custom-content">
                         <span class="catalogue-kicker">CUSTOM PACKAGING</span>
                         <h3 class="card-title">Luxury &amp; Fancy Gift Boxes</h3>
                         <p class="card-description">Premium custom-made gift and packaging boxes designed to give products a refined, distinctive presentation. We create boxes tailored to specific product requirements, with attention to structure, finish and overall aesthetics. Suitable for gifting, premium products, corporate requirements and other specialized packaging applications.</p>
-                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                        <a href="contact.html" class="card-contact">CONTACT US →</a>
                     </div>
                 </article>
 
                 <article class="products-custom-card" id="eco-friendly-stationery">
                     <div class="products-custom-image">
                         <span>02</span>
-                        <img src="{{ url_for('static', filename='css/images/eco stat.png') }}" alt="Eco-friendly stationery">
+                        <img src="static/css/images/eco stat.png" alt="Eco-friendly stationery">
                     </div>
                     <div class="products-custom-content">
                         <span class="catalogue-kicker">SUSTAINABLE STATIONERY</span>
@@ -140,13 +175,13 @@
                             <h3 class="card-title">Eco-Friendly Stationery</h3>
 
                             <img
-                                src="{{ url_for('static', filename='css/images/citron.png') }}"
+                                src="static/css/images/citron.png"
                                 alt="CITRON"
                                 class="citron-logo"
                             >
                         </div>
                         <p class="card-description">We have recently launched CITRON, our in-house brand focused entirely on creating fine, aesthetic stationery using eco-friendly and sustainable raw materials. We also create customized eco-friendly stationery tailored to specific corporate brands.</p>
-                        <a href="/contact" class="card-contact">CONTACT US →</a>
+                        <a href="contact.html" class="card-contact">CONTACT US →</a>
                     </div>
                 </article>
             </div>

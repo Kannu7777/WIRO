@@ -7,7 +7,7 @@
 
     <title>WIRO.IN | Bhai Papers Private Limited</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
@@ -16,19 +16,19 @@
 
     <header class="navbar">
 
-        <a href="/" class="logo">
+        <a href="index.html" class="logo">
             WIRO<span>.IN</span>
         </a>
 
         <nav>
-            <a href="/">Home</a>
+            <a href="index.html">Home</a>
             <a href="#about">About Us</a>
-            <a href="/products">Products</a>
-            <a href="/products#custom-solutions">Custom Solutions</a>
-            <a href="/contact">Contact Us</a>
+            <a href="products.html">Products</a>
+            <a href="products.html#custom-solutions">Custom Solutions</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
 
-        <a href="/contact" class="nav-button">
+        <a href="contact.html" class="nav-button">
             Get in Touch
         </a>
 
@@ -64,7 +64,7 @@
                         Explore Products
                     </a>
 
-                    <a href="/contact" class="button button-outline">
+                    <a href="contact.html" class="button button-outline">
                         Contact Us
                     </a>
 
@@ -186,14 +186,10 @@
 
                 <article class="product-card">
 
-                    <div class="product-number">
-                        01
-                    </div>
-
                     <div class="product-image">
 
                         <img
-                            src="{{ url_for('static', filename='css/images/wiro.png') }}"
+                            src="static/css/images/wiro.png"
                             alt="WIRO"
                         >
 
@@ -210,7 +206,7 @@
                             commercial paper-based applications.
                         </p>
 
-                        <a href="/products#wiro">
+                        <a href="products.html#wiro">
                             Explore Product →
                         </a>
 
@@ -223,14 +219,10 @@
 
                 <article class="product-card">
 
-                    <div class="product-number">
-                        02
-                    </div>
-
                     <div class="product-image">
 
                         <img
-                            src="{{ url_for('static', filename='css/images/Binding.png') }}"
+                            src="static/css/images/Binding.png"
                             alt="Nylon Coated Wires"
                         >
 
@@ -248,7 +240,7 @@
                             applications.
                         </p>
 
-                        <a href="/products#nylon-coated-wires">
+                        <a href="products.html#nylon-coated-wires">
                             Explore Product →
                         </a>
 
@@ -261,14 +253,10 @@
 
                 <article class="product-card">
 
-                    <div class="product-number">
-                        03
-                    </div>
-
                     <div class="product-image">
 
                         <img
-                            src="{{ url_for('static', filename='css/images/papers.png') }}"
+                            src="static/css/images/papers.png"
                             alt="Paper for Every Application"
                         >
 
@@ -285,7 +273,7 @@
                             stationery, packaging, publishing and more.
                         </p>
 
-                        <a href="/products#paper">
+                        <a href="products.html#paper">
                             Explore Product →
                         </a>
 
@@ -298,14 +286,10 @@
 
                 <article class="product-card">
 
-                    <div class="product-number">
-                        04
-                    </div>
-
                     <div class="product-image">
 
                         <img
-                            src="{{ url_for('static', filename='css/images/packaging.png') }}"
+                            src="static/css/images/packaging.png"
                             alt="Kappa Boards"
                         >
 
@@ -323,7 +307,41 @@
                             applications.
                         </p>
 
-                        <a href="/products#kappa-boards">
+                        <a href="products.html#kappa-boards">
+                            Explore Product →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= CORNER TAPE ================= -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="static/css/images/cornertape.png"
+                            alt="Corner Tape for Rigid Boxes"
+                        >
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <h3>
+                            Corner Tape
+                        </h3>
+
+                        <p>
+                            Heat-activated adhesive tape for clean,
+                            reinforced sealing of rigid box corners
+                            and edges.
+                        </p>
+
+                        <a href="products.html#corner-tape">
                             Explore Product →
                         </a>
 
@@ -379,7 +397,7 @@
                         <span>01</span>
 
                         <img
-                            src="{{ url_for('static', filename='css/images/lux boxes.png') }}"
+                            src="static/css/images/lux boxes.png"
                             alt="Luxury & Fancy Gift Boxes"
                         >
 
@@ -402,7 +420,7 @@
                             product and presentation requirements.
                         </p>
 
-                        <a href="/products#luxury-gift-boxes">
+                        <a href="products.html#luxury-gift-boxes">
                             Discuss a Project →
                         </a>
 
@@ -420,7 +438,7 @@
                         <span>02</span>
 
                         <img
-                            src="{{ url_for('static', filename='css/images/eco stat.png') }}"
+                            src="static/css/images/eco stat.png"
                             alt="Eco-Friendly Stationery"
                         >
 
@@ -439,7 +457,7 @@
                             </h3>
 
                             <img
-                                src="{{ url_for('static', filename='css/images/citron.png') }}"
+                                src="static/css/images/citron.png"
                                 alt="CITRON"
                                 class="citron-logo"
                             >
@@ -451,7 +469,7 @@
                             paper-based materials.
                         </p>
 
-                        <a href="/products#eco-friendly-stationery">
+                        <a href="products.html#eco-friendly-stationery">
                             Discuss a Project →
                         </a>
 
@@ -492,7 +510,7 @@
                     </p>
 
                     <a
-                        href="/contact"
+                        href="contact.html"
                         class="contact-button"
                     >
                         Get in Touch →
